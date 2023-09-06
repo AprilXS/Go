@@ -1,7 +1,7 @@
 package main
 
 import (
-	//"fmt"
+	"fmt"
 )
 
 type Item struct {
@@ -34,7 +34,7 @@ func AddItem(item Item) Item {
 func EditItem(title string, edit Item) Item {
 	var changed Item
 	for idx, val := range database {
-		if val.title == edit.title {
+		if val.title == title {
 			database[idx] = edit
 			changed = edit
 		}
@@ -54,5 +54,23 @@ func DeleteItem(item Item) Item {
 }
 
 func main() {
+	fmt.Println("initial database: ", database)
+	a := Item{"first", "a test item"}
+	b := Item{"second", "a second item"}
+	c := Item{"third", "a third item"}
 
+	AddItem(a)
+	AddItem(b)
+	AddItem(c)
+	fmt.Println("second database: ", database)
+
+	DeleteItem(b)
+	fmt.Println("third database: ", database)
+
+	EditItem("third", Item{"fourth", "a new item"})
+	fmt.Println("fourth database: ", database)
+
+	x := GetByName("fourth")
+	y := GetByName("first")
+	fmt.Println(x, y)
 }
