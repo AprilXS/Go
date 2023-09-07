@@ -1,14 +1,15 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/rpc"
 )
 
 
 type Item struct {
-	title string
-	body string
+	Title string
+	Body string
 }
 
 func main(){
@@ -29,4 +30,13 @@ func main(){
 	client.Call("API.AddItem", b, &reply)
 	client.Call("API.AddItem", c, &reply)
 	client.Call("API.GetDB", "", &db)
+
+	fmt.Println("database: ", db)
+
+	client.Call("API.EditItem", Item{"Second", "A new second item"}, &reply)
+
+	client.Call("API.DeleteItem", c, &reply)
+	client.Call("API.GetDB", "", &db)
+
+	fmt.Println("database: ", db)
 }
