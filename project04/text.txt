@@ -1,2 +1,15 @@
 Building a Basic RPC Server and Client with Go, By
 https://youtu.be/1MPWPq2N768?si=ijhHf_8LhwaB4BjK
+
+
+How to make your function from CRUD REST API to RPC
+-the function should be method
+-the function should be exported "the function name start with capital latter"
+-the function should have 2 arguments both are exported type
+-the second argument should be a pointer, "this from hamza, the second argument should the reply you want from the method"
+-the return type of the function should be an error type
+
+
+function vs method
+functions are statless, so does not care about the statless
+methods are statfull, so they care about the stat
