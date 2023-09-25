@@ -1,7 +1,6 @@
 go 1.21.1
 
 use (
-	./Test
 	./project01
 	./project02
 	./project03
