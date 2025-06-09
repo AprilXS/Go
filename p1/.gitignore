@@ -1,0 +1,25 @@
+# Go stuff
+*.exe
+*.test
+*.out
+
+
+# Build artifacts
+main
+/app/main
+
+# Logs
+*.log
+
+# IDEs/editors
+.vscode/
+.idea/
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
+docker/*~

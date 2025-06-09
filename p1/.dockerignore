@@ -1,0 +1,19 @@
+# Go stuff
+*.goos
+*.exe
+*.test
+*.out
+*.log
+
+# Build output
+main
+/app/main
+
+# Git stuff
+.git
+.gitignore
+
+# Docker and K8s config
+docker/deployment.yaml
+Dockerfile
+dockerfile
