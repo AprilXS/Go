@@ -6,6 +6,11 @@ This repository contains a series of Go microservices deployed using Docker and 
 👉 [Notion Documentation](https://knowing-stop-6f0.notion.site/Go-projects-2082ccfcb42c80028460d450a31b03f1?source=copy_link)
 
 ## Projects Included
+- **Done**
+- **p1_simple_web_server**
+- **p2_CRUD_APIs**
+
+- **Not yet**
 - **Go API**: A simple RESTful API built with Go.
 - **Go Web**: A web application using Go templates.
 - **Go CLI**: A command-line interface application.
